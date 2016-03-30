@@ -5,10 +5,11 @@ set -eux
 sudo apt-get update
 sudo apt-get -y install postgresql postgresql-contrib
 sudo systemctl enable postgresql
-sudo -u postgres createuser --superuser ubuntu
-createdb ubuntu
+set +e
+sudo -u postgres createuser -d --superuser ubuntu
 createuser --superuser root
 createdb atc
+set -e
 cat <<EOF | sudo tee /etc/postgresql/9.4/main/pg_hba.conf
 # TYPE  DATABASE        USER            ADDRESS                 METHOD
 local   all             postgres                                peer
