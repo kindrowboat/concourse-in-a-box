@@ -12,8 +12,9 @@ Use at your own risk.
 
 ## Usage
 1. Shell into your instance.
+1. `sudo apt-get install git`
 1. `git clone https://github.com/motevets/concourse-in-a-box.git`
-1. `concourse-in-a-box/setup.sh`
+1. `concourse-in-a-box/setup.bash`
 1. `sudo reboot`
 1. Wait for reboot, and shell back into your instance.
 1. `sudo ciab`
