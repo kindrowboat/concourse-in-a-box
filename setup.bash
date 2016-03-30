@@ -24,4 +24,5 @@ wget https://github.com/concourse/concourse/releases/download/v1.0.0/concourse_l
 sudo install --owner=root --group=root --mode=744 concourse_linux_amd64 /usr/local/sbin/concourse
 sudo install --owner=root --group=root --mode=744 ciab /usr/local/sbin/ciab
 
+set +x
 echo "Ready to go!  Restart and then run 'sudo coas'"
