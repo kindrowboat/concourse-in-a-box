@@ -3,7 +3,7 @@
 set -eux
 
 sudo apt-get install postgresql postgresql-contrib
-sudo systemctl enable postgres
+sudo systemctl enable postgresql
 sudo -u postgres createuser --superuser ubuntu
 createdb ubuntu
 createuser --superuser root
