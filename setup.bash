@@ -3,6 +3,7 @@
 echo "🛫 Let's get you flying with concourse.\n"
 
 set -eux
+cd "$(dirname "$0")"
 
 sudo apt-get update
 sudo apt-get -y install postgresql postgresql-contrib linux-generic-lts-vivid
