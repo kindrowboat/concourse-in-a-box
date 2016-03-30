@@ -9,7 +9,7 @@ sudo apt-get update
 sudo apt-get -y install postgresql postgresql-contrib linux-generic-lts-vivid
 sudo update-rc.d postgresql enable
 set +e
-sudo -u postgres createuser -d --superuser ubuntu
+sudo -u postgres createuser -d --superuser `whoami`
 createuser --superuser root
 createdb atc
 set -e
