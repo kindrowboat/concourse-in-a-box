@@ -24,4 +24,4 @@ sudo install --owner=root --group=root --mode=744 concourse_linux_amd64 /usr/loc
 sudo install --owner=root --group=root --mode=744 ciab /usr/local/sbin/ciab
 
 set +x
-echo "Ready to go! Run 'sudo coas'."
+echo "Ready to go! Run 'sudo ciab'."
