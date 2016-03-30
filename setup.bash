@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🛫 Let's get you flying with concourse.\n"
+printf "🛫 Let's get you flying with concourse.\n\n"
 
 set -eux
 cd "$(dirname "$0")"
@@ -27,4 +27,4 @@ sudo install --owner=root --group=root --mode=744 ciab /usr/local/sbin/ciab
 
 set +x
 
-echo "\n🛬 Ready to go! Reboot and run 'sudo ciab' to start concourse."
+printf "\n🛩 Ready to go! Reboot and run 'sudo ciab' to start concourse.\n\n"
