@@ -21,12 +21,18 @@ if [ -z "$concourse" ]; then
   exit 1
 fi
 
+# Detect Ubuntu's PostgreSQL's Unix Socket connector path.
+POSTGRESURI=""
+for f in /var/run/postgresql/.s.PGSQL.*; do
+    POSTGRESURI=" --postgres-data-source postgres:///atc?host=/var/run/postgresql"
+done
+
 $concourse web \
   --development-mode \
   --session-signing-key $session_key \
   --tsa-bind-port 2223 \
   --tsa-host-key $tsa_key \
-  --tsa-authorized-keys ${worker_key}.pub &
+  --tsa-authorized-keys ${worker_key}.pub ${POSTGRESURI} &
 
 trap "kill $!" 0
 

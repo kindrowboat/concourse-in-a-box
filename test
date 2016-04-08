@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -x
+
+uri="http://${1}:8080"
+
+fly -t test login -c $uri
+fly -t test set-pipeline -n -p test -c test_pipeline.yml
+fly -t test unpause-pipeline -p test
+xdg-open "$uri/pipelines/test/jobs/hello-world"
