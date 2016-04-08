@@ -5,6 +5,7 @@ printf "🛫 Let's get you flying with concourse.\n\n"
 set -eux
 cd "$(dirname "$0")"
 
+sudo apt-get update
 sudo apt-get -y install postgresql postgresql-contrib linux-generic-lts-vivid
 sudo update-rc.d postgresql enable
 set +e
