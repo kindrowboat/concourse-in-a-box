@@ -1,0 +1,29 @@
+{
+  "name": "concourse-in-a-box",
+  "version": "1.0.0",
+  "description": "It's my CI in a box!",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/motevets/concourse-in-a-box.git"
+  },
+  "keywords": [
+    "concourse"
+  ],
+  "author": "Tom Dunlap",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/motevets/concourse-in-a-box/issues"
+  },
+  "homepage": "https://github.com/motevets/concourse-in-a-box#readme",
+  "dependencies": {
+    "request": "^2.70.0",
+    "commander": "^2.9.0"
+  }
+}
