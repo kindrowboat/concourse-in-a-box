@@ -15,8 +15,8 @@ set -e
 if [[ ! -f concourse_linux_amd64 ]]; then
   wget https://github.com/concourse/concourse/releases/download/v1.0.0/concourse_linux_amd64
 fi
-sudo install --owner=concourse --group=concourse --mode=755 concourse_linux_amd64 /usr/local/bin/concourse
-sudo install --owner=concourse --group=concourse --mode=755 ciab /usr/local/bin/ciab
+sudo install --owner=root --group=root --mode=755 concourse_linux_amd64 /usr/local/bin/concourse
+sudo install --owner=root --group=root --mode=755 ciab /usr/local/bin/ciab
 
 set +x
 
