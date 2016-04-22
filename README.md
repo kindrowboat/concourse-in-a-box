@@ -17,7 +17,7 @@ Use at your own risk.
 1. `concourse-in-a-box/setup.bash`
 1. `sudo reboot`
 1. Wait for reboot, and shell back into your instance.
-1. `sudo ciab`
+1. `ciab`
 
 ## Credit
 Concourse is a product of Alex Suraci and Chris Brown sponsored by Pivotal Inc.
