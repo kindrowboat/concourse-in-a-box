@@ -19,11 +19,14 @@ Use at your own risk.
 1. Wait for reboot, and shell back into your instance.
 1. `ciab`
 
+## Further Reading
+Checkout [concourse-docker](https://github.com/motevets/concourse-docker) if Docker is your jam.
+
 ## Credit
 Concourse is a product of Alex Suraci and Chris Brown sponsored by Pivotal Inc.
 
 ## Contributing and Issues
-For Github issues and pull request are encouraged for issues related to Concourse in a Box.
+Github issues and pull request are encouraged for issues related to Concourse in a Box.
 For support with Concourse itself refer to [concourse.ci](http://concourse.ci), or be social on the [Concourse slack] channel.
 
 [concourse.ci]: http://concourse.ci/
